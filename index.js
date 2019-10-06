@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
-<<<<<<< HEAD
 const Dinosaurs = require('./dinosaurs');
-=======
->>>>>>> dc19962bbc1835b1a07ff3cc6b9465af62ad6b0b
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -12,7 +9,6 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === '!ping') {
     msg.reply('pong!');
-<<<<<<< HEAD
 
   }else if (msg.content === '!help') {
     msg.reply("\n!ping -> replies pong\n!mystats -> Prints out some statistics about you as a user.\n!8ball [question] -> Ask me something and I'll try to predict the answer!\n!dinosaur [name] -> Print some generic info about any dinosaur yet discovered. Leave name blank to find a random dinosaur from the database!\n!dinosaurfacts -> Learn a new fact about dinosaurs! (accuracy not guaranteed)");
@@ -24,15 +20,6 @@ client.on('message', msg => {
   }else if (msg.content === "!8ball") {
     msg.reply("I'm sorry, I can't give you an answer without a question.");
 
-=======
-  }else if (msg.content === '!help') {
-    msg.reply("\n!ping -> replies pong\n!mystats -> Prints out some statistics about you as a user.\n!8ball [question] -> Ask me something and I'll try to predict the answer!");
-  }else if (msg.content === "!mystats") {
-    var user = msg.member;
-    msg.reply(`\nID: ${user.id}\n Joined server: ${user.joinedAt}\nJoined Discord: ${user.user.createdAt}\nAvatar: ${user.user.avatarURL}`);
-  }else if (msg.content === "!8ball") {
-    msg.reply("I'm sorry, I can't give you an answer without a question.");
->>>>>>> dc19962bbc1835b1a07ff3cc6b9465af62ad6b0b
   }else if (msg.content.startsWith("!8ball")) {
     var num = Math.floor(Math.random() * 5 + 1);
     switch (num) {
@@ -55,7 +42,6 @@ client.on('message', msg => {
         msg.channel.send("I'm sorry, I'm not sure!");
         break;
     }
-<<<<<<< HEAD
   }else if (msg.content === "!dinosaur") {
 		Dinosaurs.GetDinosaur("rand", function(data) {
 			msg.channel.send(data);
@@ -72,9 +58,6 @@ client.on('message', msg => {
 			msg.channel.send(fact);
 		});
 	}
-=======
-  }
->>>>>>> dc19962bbc1835b1a07ff3cc6b9465af62ad6b0b
 });
 
 client.on('guildMemberAdd', member => {

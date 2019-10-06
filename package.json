@@ -23,7 +23,11 @@
   },
   "homepage": "https://github.com/CompILe-Club/benny-bot#readme",
   "dependencies": {
+<<<<<<< HEAD
     "discord.js": "^11.5.1",
     "request": "^2.88.0"
+=======
+    "discord.js": "^11.5.1"
+>>>>>>> dc19962bbc1835b1a07ff3cc6b9465af62ad6b0b
   }
 }

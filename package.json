@@ -1,0 +1,29 @@
+{
+  "name": "bennybot",
+  "version": "0.1.0",
+  "description": "Benny Discord Bot for CompILe",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CompILe-Club/benny-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "ghost",
+    "cute"
+  ],
+  "author": "CompILe-ICC",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/CompILe-Club/benny-bot/issues"
+  },
+  "homepage": "https://github.com/CompILe-Club/benny-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "request": "^2.88.0"
+  }
+}
